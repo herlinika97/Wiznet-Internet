@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiznet - Internet Cepat & Stabil (Support by Linknet)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wiznet: {
+                            orange: '#FF5500',
+                            blue: '#0055FF',
+                            darkblue: '#003399',
+                            yellow: '#FFCC00',
+                            light: '#F4F7FF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-wiznet-light antialiased">
+
+    <!-- Top Banner Support -->
+    <div class="bg-gray-900 text-white text-xs py-1.5 px-4 text-right pr-8 font-semibold">
+        Support by <span class="text-wiznet-orange font-bold">Linknet</span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-black italic tracking-wide text-wiznet-orange">Wiz<span class="text-wiznet-blue">net</span></span>
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+                <a href="#home" class="hover:text-wiznet-orange transition">Beranda</a>
+                <a href="#fitur" class="hover:text-wiznet-orange transition">Keunggulan</a>
+                <a href="#paket" class="hover:text-wiznet-orange transition">Paket Speed</a>
+                <a href="#kontak" class="hover:text-wiznet-orange transition">Hubungi Kami</a>
+            </nav>
+
+            <!-- CTA Button Navbar -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20berlangganan%20paket%20internet" target="_blank" 
+                   class="bg-wiznet-orange hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition">
+                   <i class="fab fa-whatsapp mr-2"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-wiznet-darkblue via-wiznet-blue to-blue-900 text-white py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="bg-wiznet-yellow text-gray-900 font-extrabold px-4 py-1.5 rounded-full text-sm uppercase inline-block mb-4 shadow-md">
+                        Solusi Internet Terbaik Untuk Keluarga & Bisnis Anda
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6 italic">
+                        INTERNET <br><span class="text-wiznet-yellow">CEPAT & STABIL</span>
+                    </h1>
+                    
+                    <!-- Fitur Utama List dari Brosur -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                            <i class="fas fa-tachometer-alt text-wiznet-yellow text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Kecepatan Tinggi</h4>
+                                <p class="text-sm text-blue-100">Streaming, Gaming, Download Tanpa Lag</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                            <i class="fas fa-wifi text-wiznet-yellow text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Koneksi Stabil</h4>
+                                <p class="text-sm text-blue-100">Tetap Lancar di Semua Perangkat</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                            <i class="fas fa-home text-wiznet-yellow text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Jangkauan Luas</h4>
+                                <p class="text-sm text-blue-100">Internet Kuat di Setiap Sudut Rumah</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-white/10 p-3 rounded-xl border border-white/10">
+                            <i class="fas fa-headset text-wiznet-yellow text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Layanan Pelanggan 24/7</h4>
+                                <p class="text-sm text-blue-100">Siap Membantu Kapan Saja</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#paket" class="inline-block bg-wiznet-orange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                        Pilih Paket Speed Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Peruntukan Penggunaan -->
+                <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-2xl border-4 border-wiznet-yellow">
+                    <h3 class="text-2xl font-black text-center text-wiznet-blue mb-6">Ideal Untuk Segala Aktivitas</h3>
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                            <i class="fas fa-tv text-4xl text-wiznet-blue mb-2"></i>
+                            <p class="font-bold text-sm">Streaming</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                            <i class="fas fa-gamepad text-4xl text-wiznet-blue mb-2"></i>
+                            <p class="font-bold text-sm">Online Gaming</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                            <i class="fas fa-laptop-house text-4xl text-wiznet-blue mb-2"></i>
+                            <p class="font-bold text-sm">Work From Home</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                            <i class="fas fa-user-graduate text-4xl text-wiznet-blue mb-2"></i>
+                            <p class="font-bold text-sm">Belajar Online</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center bg-wiznet-yellow/20 p-3 rounded-xl font-bold text-wiznet-blue text-sm border border-wiznet-yellow">
+                        🚀 Internet Untuk Masa Depan Yang Lebih Maju
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Sesuai gambar Brosur) -->
+    <section id="paket" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-wiznet-orange text-white font-bold px-4 py-1.5 rounded-full text-sm uppercase inline-block mb-3">
+                    PILIH PAKET SPEED SESUAI KEBUTUHAN ANDA
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Daftar Harga Paket Wiznet</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Paket 200 Mbps -->
+                <div class="bg-white rounded-3xl border-2 border-wiznet-blue shadow-lg overflow-hidden flex flex-col justify-between hover:shadow-2xl transition">
+                    <div class="bg-wiznet-blue text-white p-4 text-center">
+                        <h3 class="text-3xl font-black">200 <span class="text-lg font-normal">Mbps</span></h3>
+                    </div>
+                    <div class="p-6 text-center flex-grow flex flex-col justify-center">
+                        <p class="text-gray-500 text-xs font-bold uppercase mb-1">Harga Bulanan</p>
+                        <div class="text-2xl font-black text-wiznet-orange mb-4">
+                            Rp. 220.890
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 border-t pt-4">
+                            <li><i class="fas fa-check text-green-500"></i> Jaringan Fiber Optic</li>
+                            <li><i class="fas fa-check text-green-500"></i> Internet Cepat & Stabil</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20Paket%20200%20Mbps%20Rp.220.890" target="_blank" 
+                           class="block w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-center shadow transition text-sm">
+                            Pilih Paket
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paket 250 Mbps -->
+                <div class="bg-white rounded-3xl border-2 border-wiznet-blue shadow-lg overflow-hidden flex flex-col justify-between hover:shadow-2xl transition">
+                    <div class="bg-wiznet-blue text-white p-4 text-center">
+                        <h3 class="text-3xl font-black">250 <span class="text-lg font-normal">Mbps</span></h3>
+                    </div>
+                    <div class="p-6 text-center flex-grow flex flex-col justify-center">
+                        <p class="text-gray-500 text-xs font-bold uppercase mb-1">Harga Bulanan</p>
+                        <div class="text-2xl font-black text-wiznet-orange mb-4">
+                            Rp. 243.090
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 border-t pt-4">
+                            <li><i class="fas fa-check text-green-500"></i> Jaringan Fiber Optic</li>
+                            <li><i class="fas fa-check text-green-500"></i> Internet Cepat & Stabil</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20Paket%20250%20Mbps%20Rp.243.090" target="_blank" 
+                           class="block w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-center shadow transition text-sm">
+                            Pilih Paket
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paket 300 Mbps (Popular) -->
+                <div class="bg-white rounded-3xl border-4 border-wiznet-yellow shadow-xl overflow-hidden flex flex-col justify-between hover:shadow-2xl transition transform md:-translate-y-2 relative">
+                    <span class="absolute top-2 right-2 bg-wiznet-yellow text-gray-900 text-[10px] font-black uppercase px-2 py-0.5 rounded">
+                        Rekomendasi
+                    </span>
+                    <div class="bg-wiznet-blue text-white p-4 text-center">
+                        <h3 class="text-3xl font-black">300 <span class="text-lg font-normal">Mbps</span></h3>
+                    </div>
+                    <div class="p-6 text-center flex-grow flex flex-col justify-center">
+                        <p class="text-gray-500 text-xs font-bold uppercase mb-1">Harga Bulanan</p>
+                        <div class="text-2xl font-black text-wiznet-orange mb-4">
+                            Rp. 309.690
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 border-t pt-4">
+                            <li><i class="fas fa-check text-green-500"></i> Jaringan Fiber Optic</li>
+                            <li><i class="fas fa-check text-green-500"></i> Internet Super Cepat & Stabil</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20Paket%20300%20Mbps%20Rp.309.690" target="_blank" 
+                           class="block w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-center shadow transition text-sm">
+                            Pilih Paket
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paket 350 Mbps -->
+                <div class="bg-white rounded-3xl border-2 border-wiznet-blue shadow-lg overflow-hidden flex flex-col justify-between hover:shadow-2xl transition">
+                    <div class="bg-wiznet-blue text-white p-4 text-center">
+                        <h3 class="text-3xl font-black">350 <span class="text-lg font-normal">Mbps</span></h3>
+                    </div>
+                    <div class="p-6 text-center flex-grow flex flex-col justify-center">
+                        <p class="text-gray-500 text-xs font-bold uppercase mb-1">Harga Bulanan</p>
+                        <div class="text-2xl font-black text-wiznet-orange mb-4">
+                            Rp. 376.290
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 border-t pt-4">
+                            <li><i class="fas fa-check text-green-500"></i> Jaringan Fiber Optic</li>
+                            <li><i class="fas fa-check text-green-500"></i> Maksimal untuk Banyak Perangkat</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20Paket%20350%20Mbps%20Rp.376.290" target="_blank" 
+                           class="block w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-center shadow transition text-sm">
+                            Pilih Paket
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Kenapa Pilih Wiznet? -->
+    <section id="fitur" class="py-16 bg-blue-50 border-t border-b border-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-blue-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-black text-wiznet-orange mb-6">KENAPA PILIH <span class="text-wiznet-blue">WIZNET?</span></h2>
+                    <ul class="space-y-4 font-semibold text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-wiznet-orange text-xl mr-3"></i> Jaringan Fiber Optic</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-wiznet-orange text-xl mr-3"></i> Kecepatan Sesuai Kebutuhan</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-wiznet-orange text-xl mr-3"></i> Koneksi Lebih Stabil</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-wiznet-orange text-xl mr-3"></i> Harga Terjangkau</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-wiznet-orange text-xl mr-3"></i> Layanan Profesional</li>
+                    </ul>
+                </div>
+                <div class="bg-wiznet-blue text-white rounded-2xl p-8 text-center shadow-lg">
+                    <i class="fas fa-headset text-6xl text-wiznet-yellow mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Hubungi Layanan Pemasangan</h3>
+                    <p class="text-blue-100 text-sm mb-6">Tim kami siap melayani informasi pemasangan jaringan baru di lokasi Anda.</p>
+                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20tanya%20pemasangan%20baru" target="_blank" 
+                       class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-black px-6 py-3 rounded-full text-lg transition shadow-md">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i> Klik Untuk Hubungi Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-900 text-gray-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <span class="text-2xl font-black italic text-wiznet-orange">Wiz<span class="text-wiznet-blue">net</span></span>
+                <span class="text-xs text-gray-500 ml-2">Support by Linknet</span>
+                <p class="text-xs mt-1">Solusi Internet Cepat & Stabil Untuk Keluarga & Bisnis Anda.</p>
+            </div>
+            <div class="text-xs">
+                &copy; 2026 Wiznet. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

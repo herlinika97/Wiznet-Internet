@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiznet Internet - Solusi Internet Cepat & Stabil</title>
+    <title>Wiznet Internet - Support by Linknet</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome untuk Ikon -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -15,7 +15,8 @@
                 extend: {
                     colors: {
                         'wiznet-orange': '#f97316',
-                        'wiznet-dark': '#1e293b'
+                        'wiznet-blue': '#1e40af',
+                        'wiznet-dark': '#0f172a'
                     }
                 }
             }
@@ -50,20 +51,20 @@
     }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- Header / Navbar -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="bg-wiznet-orange text-white p-2 rounded-lg font-bold text-xl">W</div>
-                <span class="text-2xl font-extrabold text-wiznet-dark tracking-tight">Wiznet <span class="text-wiznet-orange">Internet</span></span>
+                <span class="text-3xl font-black italic text-wiznet-orange tracking-tight">Wiznet</span>
+                <span class="text-xs bg-red-100 text-red-600 font-bold px-2 py-1 rounded-md">Support by Linknet</span>
             </div>
             
-            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <nav class="hidden md:flex space-x-8 text-slate-600 font-medium">
                 <a href="#beranda" class="hover:text-wiznet-orange transition">Beranda</a>
-                <a href="#paket" class="hover:text-wiznet-orange transition">Paket Layanan</a>
-                <a href="#keunggulan" class="hover:text-wiznet-orange transition">Keunggulan</a>
+                <a href="#paket" class="hover:text-wiznet-orange transition">Paket Speed</a>
+                <a href="#keunggulan" class="hover:text-wiznet-orange transition">Kenapa Wiznet?</a>
                 <a href="#kontak" class="hover:text-wiznet-orange transition">Kontak</a>
             </nav>
 
@@ -79,140 +80,202 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="beranda" class="pt-32 pb-20 bg-gradient-to-b from-orange-50 to-gray-50">
+    <section id="beranda" class="pt-32 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <span class="bg-orange-100 text-wiznet-orange px-4 py-1.5 rounded-full text-sm font-semibold inline-block mb-4">Internet Cepat & Tanpa Batas</span>
-                <h1 class="text-4xl md:text-5xl font-black text-wiznet-dark leading-tight mb-6">
-                    Koneksi Super Cepat Untuk Rumah & Bisnis Anda
+                <span class="bg-orange-500 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-4 shadow">Solusi Internet Terbaik</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 italic">
+                    INTERNET CEPAT & STABIL
                 </h1>
-                <p class="text-gray-600 text-lg mb-8">
-                    Nikmati internet fiber optic Unlimited tanpa FUP. Streaming, gaming, dan kerja dari rumah tanpa hambatan.
+                <p class="text-blue-100 text-lg mb-8">
+                    Solusi internet terbaik untuk keluarga & bisnis Anda dengan koneksi tinggi, jangkauan luas, dan layanan pelanggan 24/7.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20pasang%20baru" 
+                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20baru" 
                        target="_blank" 
-                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20pasang%20baru');" 
+                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20pasang%20baru');" 
                        class="bg-wiznet-orange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg transition flex items-center justify-center">
                         <i class="fab fa-whatsapp text-2xl mr-3"></i> Pasang Sekarang
                     </a>
-                    <a href="#paket" class="border-2 border-gray-300 hover:border-wiznet-orange text-gray-700 font-bold px-8 py-4 rounded-xl text-center transition">
-                        Lihat Paket
+                    <a href="#paket" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-4 rounded-xl text-center transition">
+                        Pilih Paket Speed
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center max-w-md w-full">
-                    <div class="w-20 h-20 bg-orange-100 text-wiznet-orange rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                        <i class="fas fa-wifi"></i>
+            
+            <!-- Keunggulan Singkat Hero -->
+            <div class="md:w-5/12 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-2xl">
+                <h3 class="text-xl font-bold mb-4 text-orange-400 border-b border-white/10 pb-2">Layanan Terbaik Kami</h3>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-500 p-2 rounded-lg text-white"><i class="fas fa-tachometer-alt"></i></div>
+                        <div><strong>Kecepatan Tinggi:</strong> Streaming, Gaming, Download Tanpa Lag.</div>
                     </div>
-                    <h3 class="text-2xl font-bold text-wiznet-dark mb-2">Promo Pasang Baru</h3>
-                    <p class="text-gray-500 mb-6">Gratis Biaya Instalasi & Router WiFi Canggih!</p>
-                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20tanya%20promo" 
-                       target="_blank" 
-                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20tanya%20promo');" 
-                       class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg shadow transition block">
-                        Chat Admin via WhatsApp
-                    </a>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-500 p-2 rounded-lg text-white"><i class="fas fa-wifi"></i></div>
+                        <div><strong>Koneksi Stabil:</strong> Tetap Lancar di Semua Perangkat.</div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-500 p-2 rounded-lg text-white"><i class="fas fa-home"></i></div>
+                        <div><strong>Jangkauan Luas:</strong> Internet Kuat di Setiap Sudut Rumah.</div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-500 p-2 rounded-lg text-white"><i class="fas fa-headset"></i></div>
+                        <div><strong>Layanan 24/7:</strong> Siap Membantu Kapan Saja.</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Paket Layanan Section -->
-    <section id="paket" class="py-20 bg-white">
+    <!-- Paket Speed Section -->
+    <section id="paket" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-wiznet-dark sm:text-4xl">Pilihan Paket Internet</h2>
-                <p class="mt-4 text-xl text-gray-500">Pilih paket yang sesuai dengan kebutuhan internet Anda.</p>
+                <span class="text-wiznet-orange font-bold uppercase tracking-widest text-sm">Pilihan Terbaik</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-wiznet-dark mt-1">PILIH PAKET SPEED SESUAI KEBUTUHAN ANDA</h2>
+                <div class="w-24 h-1 bg-wiznet-orange mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Paket 1 -->
-                <div class="border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold text-wiznet-dark mb-4">Paket Home Basic</h3>
-                        <div class="text-4xl font-extrabold text-wiznet-orange mb-2">10 Mbps</div>
-                        <p class="text-gray-500 mb-6">Cocok untuk penggunaan 2-4 perangkat (Browsing & Chatting).</p>
-                        <ul class="space-y-3 mb-8 text-gray-600">
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Unlimited / Tanpa FUP</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Gratis Modem Wi-Fi</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Layanan CS 24 Jam</li>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 200 Mbps -->
+                <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="bg-blue-900 text-white text-center py-3 rounded-xl font-extrabold text-2xl mb-4">
+                            200 Mbps
+                        </div>
+                        <div class="text-center mb-6">
+                            <span class="text-xs text-slate-400 font-semibold uppercase block">Harga Bulanan</span>
+                            <span class="text-3xl font-black text-wiznet-orange">Rp. 220.890</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Streaming HD</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Online Gaming</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Work From Home</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Belajar Online</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Home%20Basic%2010%20Mbps" 
-                       target="_blank" 
-                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Home%20Basic%2010%20Mbps');" 
-                       class="w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-center block transition">
-                        Pilih Paket
-                    </a>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20200%20Mbps%20Rp.%20220.890" 
+                           target="_blank" 
+                           onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20200%20Mbps%20Rp.%20220.890');" 
+                           class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl text-center block transition shadow">
+                            Pilih Paket
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Paket 2 (Populer) -->
-                <div class="border-2 border-wiznet-orange rounded-2xl p-8 shadow-lg relative flex flex-col justify-between bg-orange-50/30">
-                    <span class="bg-wiznet-orange text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 uppercase tracking-wide">Paling Populer</span>
-                    <div>
-                        <h3 class="text-2xl font-bold text-wiznet-dark mb-4">Paket Family Speed</h3>
-                        <div class="text-4xl font-extrabold text-wiznet-orange mb-2">20 Mbps</div>
-                        <p class="text-gray-500 mb-6">Cocok untuk 5-7 perangkat (Streaming HD & Game Online).</p>
-                        <ul class="space-y-3 mb-8 text-gray-600">
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Unlimited / Tanpa FUP</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Kecepatan Stabil 1:1</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Gratis Instalasi</li>
+                <!-- 250 Mbps -->
+                <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="bg-blue-900 text-white text-center py-3 rounded-xl font-extrabold text-2xl mb-4">
+                            250 Mbps
+                        </div>
+                        <div class="text-center mb-6">
+                            <span class="text-xs text-slate-400 font-semibold uppercase block">Harga Bulanan</span>
+                            <span class="text-3xl font-black text-wiznet-orange">Rp. 243.090</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Streaming 4K</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Gaming Tanpa Lag</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Multi Device</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Belajar Online</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Family%20Speed%2020%20Mbps" 
-                       target="_blank" 
-                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Family%20Speed%2020%20Mbps');" 
-                       class="w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-center block transition shadow-md">
-                        Pilih Paket
-                    </a>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20250%20Mbps%20Rp.%20243.090" 
+                           target="_blank" 
+                           onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20250%20Mbps%20Rp.%20243.090');" 
+                           class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl text-center block transition shadow">
+                            Pilih Paket
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Paket 3 -->
-                <div class="border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold text-wiznet-dark mb-4">Paket Super Pro</h3>
-                        <div class="text-4xl font-extrabold text-wiznet-orange mb-2">50 Mbps</div>
-                        <p class="text-gray-500 mb-6">Cocok untuk 8-15 perangkat (Bisnis, Kantor & WFH).</p>
-                        <ul class="space-y-3 mb-8 text-gray-600">
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Unlimited / Tanpa FUP</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Prioritas Jaringan</li>
-                            <li class="flex items-center"><i class="fas fa-check text-emerald-500 mr-2"></i> Support Teknisi Khusus</li>
+                <!-- 300 Mbps (Populer) -->
+                <div class="bg-white rounded-2xl shadow-2xl border-2 border-wiznet-orange overflow-hidden transform hover:-translate-y-1 transition relative flex flex-col justify-between">
+                    <span class="bg-wiznet-orange text-white text-xs font-black uppercase px-4 py-1 rounded-b-lg absolute top-0 left-1/2 transform -translate-x-1/2">Paling Laris</span>
+                    <div class="p-6 pt-8">
+                        <div class="bg-wiznet-orange text-white text-center py-3 rounded-xl font-extrabold text-2xl mb-4 shadow">
+                            300 Mbps
+                        </div>
+                        <div class="text-center mb-6">
+                            <span class="text-xs text-slate-400 font-semibold uppercase block">Harga Bulanan</span>
+                            <span class="text-3xl font-black text-wiznet-orange">Rp. 309.690</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Kecepatan Super Cepat</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Cocok Untuk Usaha/Bisnis</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> BANYAK PERANGKAT</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Prioritas Jaringan</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Super%20Pro%2050%20Mbps" 
-                       target="_blank" 
-                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20berminat%20Paket%20Super%20Pro%2050%20Mbps');" 
-                       class="w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-center block transition">
-                        Pilih Paket
-                    </a>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20300%20Mbps%20Rp.%20309.690" 
+                           target="_blank" 
+                           onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20300%20Mbps%20Rp.%20309.690');" 
+                           class="w-full bg-wiznet-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-center block transition shadow-lg">
+                            Pilih Paket
+                        </a>
+                    </div>
                 </div>
+
+                <!-- 350 Mbps -->
+                <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="bg-blue-900 text-white text-center py-3 rounded-xl font-extrabold text-2xl mb-4">
+                            350 Mbps
+                        </div>
+                        <div class="text-center mb-6">
+                            <span class="text-xs text-slate-400 font-semibold uppercase block">Harga Bulanan</span>
+                            <span class="text-3xl font-black text-wiznet-orange">Rp. 376.290</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Kecepatan Maksimal</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Kantor & Kantor Luas</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Bebas Hambatan</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Layanan VIP</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20350%20Mbps%20Rp.%20376.290" 
+                           target="_blank" 
+                           onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20mau%20daftar%20Paket%20350%20Mbps%20Rp.%20376.290');" 
+                           class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl text-center block transition shadow">
+                            Pilih Paket
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Keunggulan Section -->
-    <section id="keunggulan" class="py-20 bg-gray-50">
+    <!-- Kenapa Pilih Wiznet Section -->
+    <section id="keunggulan" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-wiznet-dark">Mengapa Memilih Wiznet?</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <div class="text-wiznet-orange text-4xl mb-4"><i class="fas fa-bolt"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Koneksi Fiber Optic</h3>
-                    <p class="text-gray-500">Jaringan cepat dan tahan terhadap cuaca buruk.</p>
+            <div class="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-3xl p-8 md:p-12 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-6 italic text-orange-400">KENAPA PILIH WIZNET?</h2>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-xl"></i> Jaringan Fiber Optic</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-xl"></i> Kecepatan Sesuai Kebutuhan</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-xl"></i> Koneksi Lebih Stabil</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-xl"></i> Harga Terjangkau</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-xl"></i> Layanan Profesional</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <div class="text-wiznet-orange text-4xl mb-4"><i class="fas fa-infinity"></i></div>
-                    <h3 class="text-xl font-bold mb-2">True Unlimited</h3>
-                    <p class="text-gray-500">Bebas kuota sepuasnya tanpa ada penurunan kecepatan (FUP).</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <div class="text-wiznet-orange text-4xl mb-4"><i class="fas fa-headset"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Dukungan Cepat</h3>
-                    <p class="text-gray-500">Tim teknisi siap membantu kapan pun Anda mengalami kendala.</p>
+                <div class="md:w-5/12 bg-white text-slate-800 p-8 rounded-2xl shadow-xl text-center">
+                    <div class="text-5xl text-wiznet-orange mb-4"><i class="fas fa-rocket"></i></div>
+                    <h3 class="text-2xl font-black mb-2 text-blue-900 uppercase">Internet Untuk Masa Depan Yang Lebih Maju</h3>
+                    <p class="text-slate-500 text-sm mb-6">Daftar hari ini dan nikmati koneksi terbaik dari Wiznet Support by Linknet.</p>
+                    <a href="https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20konsultasi%20pemasangan" 
+                       target="_blank" 
+                       onclick="return gtag_report_conversion('https://wa.me/6285777978656?text=Halo%20Wiznet,%20saya%20ingin%20konsultasi%20pemasangan');" 
+                       class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-xl block transition shadow-lg">
+                        Hubungi via WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -227,10 +290,10 @@
     </a>
 
     <!-- Footer -->
-    <footer id="kontak" class="bg-wiznet-dark text-white py-10">
+    <footer id="kontak" class="bg-wiznet-dark text-white py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400 mb-2">&copy; 2026 Wiznet Internet By Infocom. All rights reserved.</p>
-            <p class="text-sm text-gray-500">Hubungi CS WhatsApp: 085777978656</p>
+            <p class="text-slate-400 text-sm mb-2">&copy; 2026 Wiznet Internet Support by Linknet. All rights reserved.</p>
+            <p class="text-xs text-slate-500">Hubungi CS WhatsApp: 085777978656</p>
         </div>
     </footer>
 
